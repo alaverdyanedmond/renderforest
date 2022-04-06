@@ -2,6 +2,10 @@
     font-size: 14px;
 }
 
+.fz11 {
+    font-size: 11px;
+}
+
 .fz36 {
     font-size: 36px;
 }
@@ -38,6 +42,10 @@
     color: var(--gray);
 }
 
+.c-gray25 {
+    color: var(--gray25);
+}
+
 .c-gray50 {
     color: var(--gray50);
 }
@@ -60,4 +68,8 @@
 
 .bg-gray {
     background-color: var(--gray);
+}
+
+.bg-blueLight {
+    background-color: var(--blueLight);
 }
