@@ -18,10 +18,10 @@
         margin-bottom: 15px;
     }
     .descr {
-        line-height: 1.4;
+        line-height: 1.5;
         margin-bottom: 50px;
-        position: relative;
-        left: 20px;
+        position: relative; 
+        margin-left: 20px;
         &::before {
             content: "";
             background-image: radial-gradient(circle, #716eea, #6a77f0, #6380f6, #5c88fb, #5690ff);
@@ -30,6 +30,7 @@
             position: absolute;
             left: -20px;
         }
+        
     }
 
     .video-container {
@@ -74,5 +75,53 @@
         background-image: url(../images/dest/partners-logos.png);
         background-repeat: repeat-x;
         height: 100px;
+    }
+    
+    .create-btn.mobile {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 1280px ) {
+    .hero{
+        .top-content {
+            flex-direction: column;
+        }
+        .content {
+            width: 80%;
+            max-width: 100%;
+        }
+    }
+}
+
+@media only screen and (max-width: 768px ) {
+    .hero {
+        padding-top: 17px;
+        .hero-top-img {
+            display: none;
+        }
+        .top-content {
+            gap: 50px;
+        }
+        .content {
+            width: 100%;
+        }
+        .title {
+            font-size: 28px;
+        }
+        .create-btn {
+            display: none;
+            &.mobile {
+                display: block;
+                margin: 0 auto ;
+                max-width: 290px;
+            }
+        }
+        .video-wrapper {
+            &::before, &::after {
+                display: none;
+            }
+        }
+        
     }
 }

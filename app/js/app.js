@@ -5,3 +5,8 @@ burger.addEventListener('click', () => {
     burger.classList.toggle('mobile');
     navUl.classList.toggle('mobile');
 })
+
+
+const header = document.querySelector('.header');
+
+header.addEventListener
