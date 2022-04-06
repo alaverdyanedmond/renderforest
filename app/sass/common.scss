@@ -1,3 +1,54 @@
+// @import "colors.css"
+
 body {
     font-family: 'Montserrat', sans-serif;
+};
+
+.container {
+    width: 95%;
+    max-width: 1124px;
+    margin: 0 auto;
 }
+
+.header-container {
+    width: 95%;
+    max-width: 1380px;
+    margin: 0 auto;
+}
+
+.ta-c {
+    text-align: center;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.ai-c {
+    align-items: center;
+}
+
+.radius10 {
+    border-radius: 10px;
+}
+
+.btn {
+    border: none;
+    cursor: pointer;
+    &:hover {
+        opacity: .8 ;
+    }
+    &.blue {
+        background: transparent linear-gradient(180deg, #5690FF 0%, #387DFF 100%) 0% 0% no-repeat padding-box;
+        padding: 11px 30px;
+        border-radius: 25px;
+        color: var(--white);
+    }
+    &.blueLight {
+        background-color: var(--blueLight);
+        border-radius: 10px ;
+        color: var(--blue);
+    }
+}
+
+
